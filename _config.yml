@@ -1,1 +1,6 @@
+# Standard configuration
 permalink: /:categories/:title.html
+exclude: [ CNAME ]
+
+# Configuration used in templates
+title: "The Cat is #1!!"
