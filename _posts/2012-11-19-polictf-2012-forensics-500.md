@@ -8,9 +8,9 @@ This problem presents [a pcap file][communication.pcap], along with the flavor t
 
 Digging into the pcap file, we find a SIP call from `danielle@10.0.42.14` to `6599@10.0.42.1`.  Digging into the RTP conversation, we find two audio streams:
 
-[![danielle@10.0.42.14 to 6599@10.0.42.1][danielle_6599.png]][danielle_6599.au]
+[![danielle@10.0.42.14 to 6599@10.0.42.1][danielle_6599.png]<br/>danielle@10.0.42.14 -> 6599@10.0.42.1][danielle_6599.au]
 
-[![6599@10.0.42.1 to danielle@10.0.42.14][6599_danielle.png]][6599_danielle.au]
+[![6599@10.0.42.1 to danielle@10.0.42.14][6599_danielle.png]<br/>6599@10.0.42.1 -> danielle@10.0.42.14][6599_danielle.au]
 
 The second one just contains a rickroll, but the first one contains what turns out to be a [1200 baud AFSK][wikipedia_afsk] signal (which we figured out after annoying other teammates by playing all of the wikipedia audio samples for [radio modulation modes][wikipedia_modulation] and looking for one that sounded similar).
 
