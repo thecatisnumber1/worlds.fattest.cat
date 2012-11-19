@@ -12,7 +12,7 @@ Digging into the pcap file, we find a SIP call from `danielle@10.0.42.14` to `65
 
 [![6599@10.0.42.1 to danielle@10.0.42.14][6599_danielle.png]][6599_danielle.au]
 
-The first one contains a rickroll, and the second one contains what turns out to be a [1200 baud AFSK][wikipedia_afsk] signal (which we figured out after annoying other teammates by playing all of the wikipedia audio samples for [radio modulation modes][wikipedia_modulation] and looking for one that sounded similar).
+The first second just contains a rickroll, but the first one contains what turns out to be a [1200 baud AFSK][wikipedia_afsk] signal (which we figured out after annoying other teammates by playing all of the wikipedia audio samples for [radio modulation modes][wikipedia_modulation] and looking for one that sounded similar).
 
 After some trial and error with various AFSK1200 decoders, we ended up successfully decoding the sample using a version of [QTMM][qtmm] that we modified to remove the "helpful" feature that converts all non-printable ASCII characters received to `'.'`.  After decoding, we got:
 
