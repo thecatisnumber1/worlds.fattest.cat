@@ -1,5 +1,5 @@
 ---
-title: "RuCTF Quals 2012: Vuln 300"
+title: "RuCTF Quals 2013: Vuln 300"
 categories: ctf
 layout: post
 ---
