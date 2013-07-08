@@ -39,4 +39,4 @@ Now, the remote repo should contain the `secret.txt` we're looking for.  Do a `g
 [git-internals]: http://git-scm.com/book/en/Git-Internals-Git-Objects
 
 [source.tar.bz2]: /postfiles/2013-07-07-sigint-ctf-git/source.tar.bz2
-[photo.jpg]: /postfiles/2013-07-07-sigint-ctf-git/
+[photo.jpg]: /postfiles/2013-07-07-sigint-ctf-git/photo.jpg
